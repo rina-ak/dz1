@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Формы — Red Bull Racing</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="navbar">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <img src="./logo.webp" width="100" alt="Red Bull Racing logo">
+            <span>Red Bull Racing</span>
+    </a>
+ <nav class="nav">
+      <a href="index.html" data-page="index.html">Главная</a>
+      <a href="history.html" data-page="history.html">История</a>
+      <a href="gallery.html" data-page="gallery.html">Галерея</a>
+      <a href="table.html" data-page="table.html">Таблица</a>
+      <a href="forms.html" data-page="forms.html">Формы</a>
+      <a href="dom.html" data-page="dom.html">DOM</a>
+      <a href="zadacha.html" data-page="zadacha.html">Задача</a>
+    </nav>
+  </div>
+</div>
+<main class="container">
+  <a id="top"></a>
+  <div class="section-title">
+    <h1>Формы</h1>
+    <div class="anchors">
+      <a href="#contact">Контакты</a>
+      <br>
+      <a href="#order">Заказ</a>
+    </div>
+  </div>
+
+  <section class="card" id="contact">
+    <h2>Форма контактов</h2>
+    <form action="https://www.bing.com/search" method="get" target="_blank">
+      <input type="hidden" name="q" value="Red Bull Racing contact form">
+      <div class="two-col">
+        <div>
+          <label for="surname">Фамилия</label>
+          <input id="surname" name="surname" type="text" value="Ivanov" required>
+        </div>
+        <div>
+          <label for="name">Имя</label>
+          <input id="name" name="name" type="text" value="Ivan" required>
+        </div>
+      </div>
+      <div class="two-col">
+        <div>
+          <label for="group">Группа</label>
+          <input id="group" name="group" type="text" value="B21-Design" required>
+        </div>
+        <div>
+          <label for="phone">Телефон</label>
+          <input id="phone" name="phone" type="text" value="+7 900 000-00-00" required>
+        </div>
+      </div>
+      <div class="two-col">
+        <div>
+          <label for="email">Электронная почта</label>
+          <input id="email" name="email" type="text" value="example@example.com" required>
+        </div>
+        <div>
+          <label for="sent_at">Дата отправки</label>
+          <input id="sent_at" name="sent_at" type="date" value="2025-12-17" required>
+        </div>
+      </div>
+      <button type="submit">Отправить</button>
+    </form>
+    <p style="text-align:right"><a href="#top">К началу страницы</a></p>
+  </section>
+
+  <section class="card" id="order" style="margin-top:14px">
+    <h2>Форма заказа (оригинальные данные)</h2>
+    <form action="https://www.bing.com/search" method="get" target="_blank">
+      <input type="hidden" name="q" value="Red Bull Racing merch order">
+      <label for="item">Товар</label>
+      <input id="item" name="item" type="text" value="Team Cap" required>
+
+      <label for="qty">Количество</label>
+      <input id="qty" name="qty" type="number" value="1" min="1" required>
+
+      <div>
+        <span style="font-weight:700">Размер</span><br>
+        <input id="size_s" type="radio" name="size" value="S" checked>
+        <label for="size_s">S</label>
+        <input id="size_m" type="radio" name="size" value="M">
+        <label for="size_m">M</label>
+        <input id="size_l" type="radio" name="size" value="L">
+        <label for="size_l">L</label>
+      </div>
+
+      <div>
+        <span style="font-weight:700">Опции</span><br>
+        <input id="gift" type="checkbox" name="gift_wrap" value="yes" checked>
+        <label for="gift">Подарочная упаковка</label>
+        <input id="fast" type="checkbox" name="fast_shipping" value="yes">
+        <label for="fast">Быстрая доставка</label>
+      </div>
+
+      <label for="delivery_date">Дата доставки</label>
+      <input id="delivery_date" name="delivery_date" type="date" value="2025-12-24">
+
+      <label for="password">Пароль</label>
+      <input id="password" name="password" type="password" value="rb2025">
+
+      <input type="hidden" name="source" value="homework_1">
+
+      <button type="submit">Отправить заказ</button>
+    </form>
+    <p style="text-align:right"><a href="#top">К началу страницы</a></p>
+  </section>
+  <footer>
+Все изображения принадлежат своим правообладателям и используются в учебных целях. Вот так вот.
+  </footer>
+</main>
+</body>
+</html>

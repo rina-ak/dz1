@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DOM — Red Bull Racing</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="navbar">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <img src="./logo.webp" width="100" alt="Red Bull Racing logo">
+            <span>Red Bull Racing</span>
+    </a>
+ <nav class="nav">
+      <a href="index.html" data-page="index.html">Главная</a>
+      <a href="history.html" data-page="history.html">История</a>
+      <a href="gallery.html" data-page="gallery.html">Галерея</a>
+      <a href="table.html" data-page="table.html">Таблица</a>
+      <a href="forms.html" data-page="forms.html">Формы</a>
+      <a href="dom.html" data-page="dom.html">DOM</a>
+      <a href="zadacha.html" data-page="zadacha.html">Задача</a>
+    </nav>
+  </div>
+</div>
+<main class="container">
+  <div class="section-title">
+    <h1>DOM</h1>
+    <div class="anchors">
+      <a href="#data">Данные</a>
+      <br>
+      <a href="#read">Считывание</a>
+      <br>
+      <a href="index.html">На главную</a>
+    </div>
+  </div>
+
+  <section class="card" id="data">
+    <h2>Страница с данными</h2>
+    <p>Фамилия: <span id="surname">VERSTAPPEN</span></p>
+    <p>Имя: <span id="name">MAX</span></p>
+    <p>Год рождения: <span id="year">1997</span></p>
+    <button onclick="toCyrillic()">Латиница → кириллица</button>
+    <button onclick="toLatin()">Кириллица → латиница</button>
+  </section>
+
+  <section class="card" id="read" style="margin-top:14px">
+    <h2>Считывание из DOM</h2>
+    <p>Откройте консоль разработчика и выполните команды:</p>
+    <pre style="white-space:pre-wrap; color:var(--muted); margin:0">
+document.getElementById('surname').innerText
+document.getElementById('name').innerText
+document.getElementById('year').innerText
+    </pre>
+  </section>
+    <footer>
+Все изображения принадлежат своим правообладателям и используются в учебных целях. Вот так вот.
+  </footer>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>

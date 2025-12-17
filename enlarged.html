@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Увеличенное изображение</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    .center {
+      min-height: calc(100vh - 90px);
+      display:flex; align-items:center; justify-content:center;
+      padding:24px;
+    }
+    .wrap { text-align:center; }
+    .wrap img {
+      width: 360px;
+      transform: scale(2);
+      transform-origin: center;
+      border-radius:16px;
+      border:1px solid var(--border);
+      box-shadow: 0 16px 40px rgba(0,0,0,.35);
+    }
+    @media (max-width: 920px){
+      .wrap img{width:240px; transform: scale(1.6);}
+    }
+  </style>
+</head>
+<body>
+<div class="navbar">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <img src="./logo.webp" width="100" alt="Red Bull Racing logo">
+            <span>Red Bull Racing</span>
+    </a>
+ <nav class="nav">
+      <a href="index.html" data-page="index.html">Главная</a>
+      <a href="history.html" data-page="history.html">История</a>
+      <a href="gallery.html" data-page="gallery.html">Галерея</a>
+      <a href="table.html" data-page="table.html">Таблица</a>
+      <a href="forms.html" data-page="forms.html">Формы</a>
+      <a href="dom.html" data-page="dom.html">DOM</a>
+      <a href="zadacha.html" data-page="zadacha.html">Задача</a>
+    </nav>
+  </div>
+</div>
+<main class="container">
+  <div class="center">
+    <div class="wrap">
+      <img src="https://i.pinimg.com/1200x/de/c1/c8/dec1c8b47d698a7f6401b52ebf40eccd.jpg" alt="Увеличенное изображение">
+    </div>
+  </div>
+    <footer>
+Все изображения принадлежат своим правообладателям и используются в учебных целях. Вот так вот.
+  </footer>
+</main>
+</body>
+</html>

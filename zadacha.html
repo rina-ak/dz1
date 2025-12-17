@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Алгоритмическая задача</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<div class="navbar">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <img src="./logo.webp" width="100" alt="Red Bull Racing logo">
+            <span>Red Bull Racing</span>
+    </a>
+ <nav class="nav">
+      <a href="index.html" data-page="index.html">Главная</a>
+      <a href="history.html" data-page="history.html">История</a>
+      <a href="gallery.html" data-page="gallery.html">Галерея</a>
+      <a href="table.html" data-page="table.html">Таблица</a>
+      <a href="forms.html" data-page="forms.html">Формы</a>
+      <a href="dom.html" data-page="dom.html">DOM</a>
+      <a href="zadacha.html" data-page="zadacha.html">Задача</a>
+    </nav>
+  </div>
+</div>
+
+  <main class="container">
+    <section>
+      <h3>Условие задачи</h3>
+      <p class="smallnote">
+        Дан квадратный зал площадью <b>S</b>. <br> Нужно определить, можно ли разместить в нём круглую сцену радиуса <b>R</b>
+        так, чтобы расстояние от стены до сцены было не менее <b>K</b>.
+      </p>
+    </section>
+
+    <section>
+      <h3>Ввод данных</h3>
+
+      <label for="S">Площадь зала S:</label>
+      <input type="number" id="S" value="100">
+
+      <label for="R">Радиус сцены R:</label>
+      <input type="number" id="R" value="10">
+
+      <label for="K">Минимальный проход K:</label>
+      <input type="number" id="K" value="5">
+
+      <button type="button" onclick="solve()">Проверить</button>
+
+      <p id="result" class="result"></p>
+    </section>
+  </main>
+<script src="js/main.js"></script>
+</body>
+</html>
